@@ -1,13 +1,21 @@
 {
-  "name": "advance-css",
+  "name": "toursite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-   "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "author": "uschas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uschas75/tourSite.git"
+  },
+  "author": "Uschas",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uschas75/tourSite/issues"
+  },
+  "homepage": "https://github.com/Uschas75/tourSite#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
   }
