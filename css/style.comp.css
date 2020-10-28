@@ -26,26 +26,22 @@ html {
   /*font-size:10px;!*1rem = 10px*!*/
   font-size: 62.5%;
   /*default font size is 16px ...62.5% of 16px is 10px*/ }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     body {
       padding: 0; } }
-
-::selection {
-  background-color: #55c57a;
-  color: #fff; }
 
 .header {
   height: 95vh;
@@ -55,7 +51,7 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%); }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
@@ -93,7 +89,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
@@ -103,7 +99,7 @@ body {
     font-weight: 700;
     letter-spacing: 1.76rem;
     animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
 
@@ -117,10 +113,10 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -171,7 +167,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 30rem 0 5rem 0;
+  padding: 30rem 0 50rem 0;
   margin-top: -9rem; }
 
 .section-stories {
@@ -629,11 +625,11 @@ body {
   box-shadow: 0 1rem 3rem rgba(85, 85, 85, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
@@ -648,11 +644,11 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 10;
   transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
@@ -744,10 +740,10 @@ body {
   margin: 0 auto !important; }
   .row:not(:last-child) {
     margin-bottom: 8rem !important; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -759,7 +755,7 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
@@ -775,7 +771,7 @@ body {
   padding: 18rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
   .footer__logo-box {
@@ -788,7 +784,7 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -814,7 +810,7 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
         float: none; } }
