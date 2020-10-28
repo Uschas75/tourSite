@@ -9,16 +9,34 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
 
+  @include respond(tab-port){
+    width: 100%;
+    padding: 3rem;
+    padding-left: 7rem;
+  }
+  @include respond(phone){
+    transform: skewX(0);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
     float:left;//float only work if there is height and width;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);//radius 50% at circle kendro 50% 50%;
-    -webkit-clip-path:(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    @supports (clip-path: polygon(0 0)) or  (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path:(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);//radius 50% at circle kendro 50% 50%;
+
+    }
+
+    @include respond(phone){
+      transform: translateX(-3rem) skewX(0);
+    }
   }
   &__image{
     height:100%;
@@ -28,6 +46,10 @@
   }
   &__text{
     transform:skewX(12deg);
+
+    @include respond(phone){
+      transform:skewX(0);
+    }
   }
   &__caption{
     position:absolute;
